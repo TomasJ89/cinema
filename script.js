@@ -23,39 +23,6 @@ close.onclick = () => {
     form.classList.add("d-none");
 };
 
-// function getMovies() {
-//     return JSON.parse(localStorage.getItem('movies')) || [];
-// }
-//
-// function saveMovies(movies) {
-//     localStorage.setItem('movies', JSON.stringify(movies));
-// }
-//
-// function addMovie(title, image, seats) {
-//     const movies = getMovies();
-//     movies.push({ id: Date.now(), title, image, seats, reservations: [] });
-//     saveMovies(movies);
-// }
-//
-// function deleteMovie(movieId) {
-//     let movies = getMovies();
-//     movies = movies.filter(movie => movie.id !== movieId);
-//     saveMovies(movies);
-// }
-//
-// function reserveSeat(movieId, reservedSeats) {
-//     const movies = getMovies();
-//     const movie = movies.find(movie => movie.id === movieId);
-//     if (movie) {
-//         reservedSeats.forEach(seatId => {
-//             if (!movie.reservations.includes(seatId)) {
-//                 movie.reservations.push(seatId);
-//             }
-//         });
-//         saveMovies(movies);
-//     }
-// }
-
 function renderMovies() {
     const MoviesContainer = document.getElementById('moviesList');
     const movies = getMovies();
